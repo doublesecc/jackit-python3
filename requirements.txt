@@ -1,4 +1,4 @@
 click
 pyusb
 six
-
+setuptools
