@@ -4,7 +4,8 @@ main(){
     echo -e '\n[~] It is recommended to run this script with the following command:'
     echo -e 'source ./setup.sh\n'
 
-    read -r -p "[?] Do you want to continue executing this script? [y/N]" response
+    echo "[?] Do you want to continue executing this script? [y/N]" 
+    read response
     case "$response" in
         [yY][eE][sS]|[yY])
         true
