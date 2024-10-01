@@ -23,7 +23,7 @@ If there are no errors, you should be able to run jackit:
 sudo ~/venv/jackit/bin/jackit
 ```
 
-If there are any errors, first check that all system packages are up to date:
+If there are any errors, check that all system packages are up to date and then re-run the script:
 ```bash
 sudo apt update -y
 ```
