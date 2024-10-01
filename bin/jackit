@@ -14,8 +14,7 @@ from jackit import mousejack
 from jackit import keylogger
 
 __version__ = 2.00
-__original_authors__ = "phikshun, infamy"
-__updated_by__ = "doublesec"
+__authors__ = "doublesec, phikshun, infamy"
 
 # some console colours
 W = '\033[0m'  # white (normal)
