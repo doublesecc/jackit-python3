@@ -2,6 +2,18 @@
 
 You can use https://github.com/kuzmin-no/nrf-research-firmware-python3 to flash your crazyradio PA with the mousejack firmware via python3.
 
+# Quick Setup
+Run the setup.sh script:
+```bash
+source ./setup.sh
+```
+
+If there are no errors, you should be able to run jackit:
+```bash
+sudo ~/venv/jackit/bin/jackit
+```
+
+# Manual Setup
 ## Setup Python Virtual Environment
 ### Install venv
 ``` bash
@@ -40,14 +52,21 @@ sudo apt install python3-usb
 pip3 install -r requirements.txt
 ```
 
-## Run Setup
+## Install jackit python package into 
 ```bash
-python setup.py install
+pip3 install -e .
 ```
 
+# Usage
 ## Run Jackit
 ```bash
 sudo ~/venv/jackit/bin/jackit
 ```
 
+## Resetting jackit
+Sometimes the following error will appear:
 
+You can reset it and then just run jackit as normal
+```bash
+sudo ~/venv/jackit/bin/jackit --reset
+```
