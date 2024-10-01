@@ -1,6 +1,6 @@
 # jackit-python3
 
-You can use https://github.com/kuzmin-no/nrf-research-firmware-python3 to flash your crazyradio PA with the mousejack firmware via python3.
+You can use this [repository](https://github.com/kuzmin-no/nrf-research-firmware-python3) to flash your crazyradio PA with the mousejack firmware using python3.
 
 # Quick Setup
 Run the setup.sh script:
