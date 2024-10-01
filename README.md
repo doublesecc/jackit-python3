@@ -1,5 +1,5 @@
 # jackit-python3
-This repository is a minor update to the original [jackit repo](https://github.com/insecurityofthings/jackit) with the intention to make it work consistently with python3 in a venv.
+This repository is a minor update to the original [jackit repo](https://github.com/insecurityofthings/jackit) with the intention to make it work consistently with python3 in a python virtual environment (venv).
 
 You can use this [repository](https://github.com/kuzmin-no/nrf-research-firmware-python3) to flash your crazyradio PA with the mousejack firmware using python3.
 
