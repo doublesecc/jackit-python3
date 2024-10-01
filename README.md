@@ -1,16 +1,15 @@
 # jackit-python3
-This repository is an minor update to the original [jackit repo](https://github.com/insecurityofthings/jackit) with the intention to make it work consistenetly with python3.
+This repository is a minor update to the original [jackit repo](https://github.com/insecurityofthings/jackit) with the intention to make it work consistently with python3 in a venv.
 
 You can use this [repository](https://github.com/kuzmin-no/nrf-research-firmware-python3) to flash your crazyradio PA with the mousejack firmware using python3.
 
 # Quick Setup
-Clone this repository:
+## Clone this repository
 ```bash
 git clone https://github.com/doublesecc/jackit-python3.git && \
 cd jackit-python3/
 ```
-
-Run the setup.sh script:
+## Run the setup.sh script
 ```bash
 source ./setup.sh
 ```
@@ -41,7 +40,7 @@ python3 -m venv ~/venv/jackit
 source ~/venv/jackit/bin/activate
 ```
 
-## Clone
+## Clone This Repository
 ```bash
 git clone https://github.com/doublesecc/jackit-python3.git && \
 cd jackit-python3/
@@ -59,7 +58,7 @@ sudo apt install python3-usb
 pip3 install -r requirements.txt
 ```
 
-## Install jackit python package into 
+## jackit python package in jackit venv
 ```bash
 pip3 install -e .
 ```
@@ -71,9 +70,30 @@ sudo ~/venv/jackit/bin/jackit
 ```
 
 ## Resetting jackit
-Sometimes the following error will appear:
+Sometimes the jackit will generate a timeout related error.
 
-You can reset it and then just run jackit as normal
+You can just run jackit with the reset option to fix this.
 ```bash
 sudo ~/venv/jackit/bin/jackit --reset
+```
+
+## Help
+```bash
+sudo ~/venv/jackit/bin/jackit --help
+Usage: jackit [OPTIONS]
+
+Options:
+  --debug             Enable debug
+  --script PATH       Ducky file to use for injection
+  --lowpower          Disable LNA on CrazyPA
+  --interval INTEGER  Interval of scan in seconds, default to 5s
+  --layout TEXT       Keyboard layout: us, gb, de...
+  --address TEXT      Address of device to target attack
+  --vendor TEXT       Vendor of device to target (required when specifying
+                      address)
+  --reset             Reset CrazyPA dongle prior to initialization
+  --autopwn           Automatically find and attack all targets
+  --all-channels      Send attack to all detected channels
+  --keylogging        Log keystrokes for XOR encrypted MS keyboards
+  --help              Show this message and exit.
 ```
