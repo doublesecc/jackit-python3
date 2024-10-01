@@ -3,6 +3,10 @@ This repository is a minor update to the original [jackit repo](https://github.c
 
 You can use this [repository](https://github.com/kuzmin-no/nrf-research-firmware-python3) to flash your crazyradio PA with the mousejack firmware using python3.
 
+
+> [!IMPORTANT]  
+> This script has been created for debian based systems and tested successfully against Ubuntu and Kali distributions.
+
 # Quick Setup
 ## Clone this repository
 ```bash
@@ -17,6 +21,11 @@ source ./setup.sh
 If there are no errors, you should be able to run jackit:
 ```bash
 sudo ~/venv/jackit/bin/jackit
+```
+
+If there are any errors, first check that all system packages are up to date:
+```bash
+sudo apt update -y
 ```
 
 # Manual Setup
