@@ -1,8 +1,7 @@
 # jackit-python3
-This repository is a minor update to the original [jackit repo](https://github.com/insecurityofthings/jackit) with the intention to make it work consistently with python3 in a python virtual environment (venv).
+This repository is a minor update to the original [jackit repository](https://github.com/insecurityofthings/jackit) with the intention to make it work consistently with python3 in a python virtual environment (venv).
 
 You can use this [repository](https://github.com/kuzmin-no/nrf-research-firmware-python3) to flash your crazyradio PA with the mousejack firmware using python3.
-
 
 > [!IMPORTANT]  
 > This script has been created for debian based systems and tested successfully against Ubuntu and Kali distributions.
@@ -18,12 +17,12 @@ cd jackit-python3/
 source ./setup.sh
 ```
 
-If there are no errors, you should be able to run jackit:
+If there are no errors, you should be able to run jackit
 ```bash
 sudo ~/venv/jackit/bin/jackit
 ```
 
-If there are any errors, check that all system packages are up to date and then re-run the script:
+If there are any errors, check that all system packages are up to date and then re-run the script
 ```bash
 sudo apt update -y
 ```
@@ -34,7 +33,7 @@ sudo apt update -y
 ``` bash
 sudo apt install python3-venv
 ```
-### Setup venv filesystem
+### Create dirctory to store venvs
 ```bash
 mkdir ~/venv
 ```
@@ -49,39 +48,40 @@ python3 -m venv ~/venv/jackit
 source ~/venv/jackit/bin/activate
 ```
 
-## Clone This Repository
+## Clone this repository
 ```bash
 git clone https://github.com/doublesecc/jackit-python3.git && \
 cd jackit-python3/
 ```
 
 ## Install Required packages
-### System Packages
+### Install system packages
 Install pyusb
 ```bash
 sudo apt install python3-usb
 ```
-### Pip3 packages
+### Install pip3 packages
 
 ```bash
 pip3 install -r requirements.txt
 ```
 
-## jackit python package in jackit venv
+## Install jackit python package in jackit venv
 ```bash
 pip3 install -e .
 ```
 
 # Usage
-## Run Jackit
+## Run jackit
 ```bash
 sudo ~/venv/jackit/bin/jackit
 ```
 
-## Resetting jackit
+# Troubleshooting
+## Timeout Error
 Sometimes the jackit will generate a timeout related error.
 
-You can just run jackit with the reset option to fix this.
+You can just run jackit with the reset option to fix this and do it each time as needed.
 ```bash
 sudo ~/venv/jackit/bin/jackit --reset
 ```
