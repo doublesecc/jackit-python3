@@ -26,7 +26,8 @@ If there are any errors, check that all system packages are up to date and then 
 ```bash
 sudo apt update -y
 ```
-
+> [!NOTE]  
+> This update command is not included in the setup.sh script, just in case you don't want to update all packages for some reason.
 # Manual setup
 ## Ensure system packages are up to date
 ```bash
